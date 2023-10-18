@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/global.scss";
-import Products from "./Products.jsx";
+import FeaturedProducts from "./FeaturedProducts.jsx";
 
-function Navbar() {
+export function Navbar() {
   return (
     <>
       <ul className="navbar">
         <li className="brand">Neon</li>
-        <li>Home</li>
-        <li>Products</li>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          Home
+        </Link>
+        <Link to="products" style={{ textDecoration: "none" }}>
+          Products
+        </Link>
       </ul>
     </>
   );
@@ -25,7 +29,7 @@ function App() {
             <div>Shop Now!</div>
           </div>
         </section>
-        <Products></Products>
+        <FeaturedProducts />
       </div>
     </>
   );
