@@ -49,7 +49,9 @@ export default function ProductProfile({ limit }) {
   const handleAddClick = (event) => {
     const itemTitle = event.target.getAttribute("data-title");
     const itemQuantity = event.target.getAttribute("data-quant");
-    const item = new AddToCart(itemTitle, itemQuantity);
+    const itemPrice = event.target.getAttribute("data-price");
+    const item = new AddToCart(itemTitle, itemQuantity, itemPrice);
+    console.log(item);
   };
 
   if (error)
@@ -87,8 +89,9 @@ export default function ProductProfile({ limit }) {
           <button
             data-title={product.title}
             data-quant={quantities[index]}
+            data-price={product.price}
             onClick={handleAddClick}
-            className="text"
+            className="add"
           >
             Add To Cart
           </button>
