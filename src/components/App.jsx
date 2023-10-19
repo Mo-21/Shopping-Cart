@@ -10,10 +10,10 @@ export function Navbar() {
         <Link to="/" style={{ textDecoration: "none" }}>
           Home
         </Link>
-        <Link to="products" style={{ textDecoration: "none" }}>
+        <Link to="/products" style={{ textDecoration: "none" }}>
           Products
         </Link>
-        <Link to="cart" style={{ textDecoration: "none" }}>
+        <Link to="/cart" style={{ textDecoration: "none" }}>
           Cart
         </Link>
       </ul>
