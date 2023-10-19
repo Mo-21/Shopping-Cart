@@ -20,6 +20,11 @@ body {
   }
 }
 
+h2,
+h1 {
+  color: white;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -103,6 +108,18 @@ ul {
       margin-top: 5px;
       border-radius: 25px;
     }
+    .input-group {
+      display: flex;
+      gap: 2px;
+
+      input {
+        overflow-x: hidden;
+      }
+    }
+  }
+
+  button {
+    max-width: 250px;
   }
 }
 
@@ -116,11 +133,24 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 300px;
+    max-width: 250px;
     font-size: 1.5rem;
   }
   img {
     margin-top: 5px;
     border-radius: 25px;
+    max-height: 300px;
+  }
+  .input-group {
+    display: flex;
+    gap: 2px;
+
+    input {
+      overflow-x: hidden;
+    }
+  }
+
+  button {
+    max-width: 250px;
   }
 }

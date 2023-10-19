@@ -13,6 +13,9 @@ export function Navbar() {
         <Link to="products" style={{ textDecoration: "none" }}>
           Products
         </Link>
+        <Link to="cart" style={{ textDecoration: "none" }}>
+          Cart
+        </Link>
       </ul>
     </>
   );
