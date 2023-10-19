@@ -3,7 +3,7 @@ import "../styles/global.scss";
 import { useState, useEffect } from "react";
 
 export class AddToCart {
-  static itemsToCheck = [{ title: "Hello", quantity: 2, price: 13 }];
+  static itemsToCheck = [];
   constructor(title, quantity, price) {
     (this.title = title), (this.quantity = quantity), (this.price = price);
     AddToCart.itemsToCheck.push({ title, quantity, price });
